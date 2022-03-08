@@ -175,7 +175,7 @@ span{
   background-color: red;
 }
 
-@media screen and (max-width:380px) {
+@media screen and (min-width:380px) {
   .centralizar{
     margin-top: -25px;
   }
