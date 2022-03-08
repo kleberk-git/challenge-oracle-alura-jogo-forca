@@ -1,0 +1,207 @@
+
+body{
+
+  text-align: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 55%, rgba(91,59,69,1) 100%, rgba(0,212,255,1) 100%);
+}
+#tela-inicial{
+  margin: 50px;
+}
+
+.teclado{
+  margin-top: -15px;
+}
+
+.msg-acerto-erro{
+  color: white;
+  font-size: 25px;
+
+}
+
+.linha{
+  width: 50%;
+  color: white;
+  margin-top: -40px;
+}
+
+@font-face{
+  font-family:'blonde';
+  src: url('Blonde.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+.logo-controle{
+  height: 200px;
+  width: 200px;
+  border-radius: 15%;
+}
+
+
+h1{
+  color: orange;
+}
+
+.dica{
+  color: orange;
+  cursor: pointer;
+
+}
+.titulo-jogo{
+  font-size: 30px;
+  font-family: 'blonde';
+}
+.adicionar-palavra{
+  margin: 30px;
+}
+
+.campo-adicionar{
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+.centralizar{
+  margin-top: -50px;
+}
+.controle-jogador{
+  width: 550px;
+  margin: auto;
+}
+
+.estilo_adicionar_palavra{
+  color: grey;
+  cursor: pointer;
+  stroke: floralwhite;
+}
+.estilo_adicionar_palavra:hover{
+  color: white;
+}
+button{
+  display: inline;
+  width:50px;
+  height: 50px;
+  background-color: white;
+  margin: 2px;
+  border: none;
+
+}
+#adicionar-palavra{
+  margin-top: 150px;
+  display: none;
+}
+.btn-jogar-novamente{
+  height: 45px;
+  width: 180px;
+  background:  linear-gradient(to  left,  #ccff33, #1e1e1e);
+  cursor: pointer;
+  flex-wrap: wrap;
+  color: #fff;
+  border: none;
+  font-family: COURIER NEW;
+  font-size: 15px;
+  border-radius: 8px;
+}
+.btn-jogar-novamente:hover{
+  background:  linear-gradient(to  left,  #1e1e1e, #1e1e1e);
+}
+
+.certa{
+  background: green;
+  color: white;
+}
+.errada{
+  background-color: red;
+  color: white;
+}
+span{
+  display: inline-block;
+  justify-content: center;
+  border-bottom: 1px solid ;
+  width: 45px;
+  height: 20px;
+  margin: 5px;
+  padding: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color:rgb(52, 238, 83)
+}
+.rodape{
+  font-size: 18px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 8px;
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+
+}.rodape a{
+  color: orange;
+  padding: 15px;
+}
+
+.trofeu{
+ margin: auto;
+  height: 150px;
+
+}
+.gameover{
+  display: none;
+  font-size: 30px;
+  font-family: 'blonde';
+}
+.centro{
+  width: 350px;
+  background-color: orange;
+  margin: auto;
+}
+.sair{
+  margin: 0;
+  display: none;
+  width: 22px;
+  height:22px;
+  text-align: center;
+  background-color: darkred;
+  color: white;
+  margin: auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sair:hover{
+  background-color: red;
+}
+
+@media screen and (max-width:480px) {
+  .centralizar{
+    margin-top: -25px;
+  }
+  .titulo-jogo{
+     font-size: 20px;
+    font-family: 'blonde';
+  }
+  .controle-jogador{
+  width: 420px;
+  margin: auto;
+  
+}
+.linha{
+  width: 100%;
+  color: white;
+  margin-top: -25px;
+}
+.campo-adicionar{
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+.btn-jogar-novamente{
+  height: 40px;
+  width: 80%;
+}
+}
