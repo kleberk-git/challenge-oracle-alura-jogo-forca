@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content = "width=device-width, initial-scale=1">
+      <title>Jogo da Forca</title>
+      <link rel="stylesheet" type="text/css" href="css/estilo_index.css">
+      <link rel="stylesheet" href="css/estilo_menu.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+<body>
+    <button id="sair" class="sair" onclick="atualizar()">X</button>
+    <div class="titulo-jogo">
+      <h1>Jogo da Forca <br> HTML, CSS E JS</h1>
+      <hr id="linha" class="linha">
+      
+    </div>
+    <!-- Aqui eu defini o menu de navegação -->
+    <nav id="menu">
+      <ul class="menu">
+        <li><a href="other_pages/index.html">Inicio | </a></li>
+        <li><a href="other_pages/sobre.html"> Sobre | </a></li>
+        <li><a href="other_pages/como_Funciona.html"> Como funciona? | </li></a>
+        <li><a href="other_pages/contato.html"> Contato</a></li>
+      </ul> 
+    </nav>
+    <div id="adicionar-palavra">
+        <p style="color: white;">Caso queira adicionar uma nova palavra, digite aqui...</p>
+        <input class="campo-adicionar" type="text" id="inserir" placeholder="Adicionar palavra...">
+        <button class="btn-jogar-novamente" onclick="inserir_palavra()">Enviar | JOGAR</button>
+    </div>
+
+    <div id="tela-inicial">
+      <p id="adicionar" class="estilo_adicionar_palavra" onclick="adicionar_palavra()">Adicionar palavra | clique aqui</p>
+      <img class="logo-controle" src="img/logo-controle.png"><br><br><br>
+      <p style="color: white;">PRONTO PARA JOGAR?</p>
+      <button id="iniciar-jogo" class="btn-jogar-novamente" onclick="exibir();">INICIAR JOGO</button>
+    </div>
+<div id="mostrar-tabuleiro">
+    <div id="ocultar" class="centralizar">
+      <canvas id="tela" width="400" height="300" ></canvas>
+      <div class="centro">
+        <p id="gameover" class="gameover">GAME OVER</p>
+      </div>
+      <div id = "palavra"></div>
+      <p id="dica" onclick="dica()" class="dica">** dica ** &nbsp;&nbsp;&nbsp;&nbsp;| Você possui: 6x tentativas |</p>
+    </div>
+
+    <div class="mensagens-tela">
+      <p id="msg" class="msg-acerto-erro"></p>
+      <p id="palavra-correta" class="msg-acerto-erro"></p>
+    </div>
+    <div class="controle-jogador">
+      <div class="teclado" id="letras"></div>
+    </div>
+</div>  
+    <!-- Aqui eu defini meu rodapé-->
+  <footer class="rodape">
+    <p>Desenvolvido por: Kleber Belo | 2022<br>
+    <a href="index.html">new_gallery</p></a>
+  </footer>
+  
+    <script src="js/canvas.js"></script>
+    <script src="js/forca.js"></script>
+    
+</body>
+</html>
