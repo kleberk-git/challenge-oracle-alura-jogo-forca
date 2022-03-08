@@ -175,13 +175,12 @@ span{
   background-color: red;
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:480px) {
   .centralizar{
     margin-top: -25px;
   }
   .titulo-jogo{
-     font-size: 15px;
-    font-family: 'blonde';
+    font-size: 15px;
   }
   .controle-jogador{
   width: 420px;
