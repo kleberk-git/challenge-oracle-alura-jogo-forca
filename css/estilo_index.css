@@ -95,7 +95,7 @@ button{
 }
 .btn-jogar-novamente{
   display: inline;
-  width: 20%;
+  width: 200px;
   background:  linear-gradient(to  left,  #ccff33, #1e1e1e);
   cursor: pointer;
   color: #fff;
