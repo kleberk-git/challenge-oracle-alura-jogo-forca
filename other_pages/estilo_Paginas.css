@@ -74,6 +74,10 @@ a{
   flex-wrap: wrap;
   align-items: center;
 }
+.centralizar{
+  margin-top: -50px;
+
+}
 
 .rodape{
   font-size: 18px;
