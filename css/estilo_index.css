@@ -177,7 +177,6 @@ margin-top: 100px;
   }
   .titulo-jogo{
     font-size: 18px;
-
   }
   .gameover{
     display: none;
@@ -185,9 +184,7 @@ margin-top: 100px;
   .controle-jogador{
   width: 420px;
   margin: auto;
-  
 }
-
 .linha{
   width: 100%;
   color: white;
@@ -206,8 +203,9 @@ margin-top: 100px;
   justify-content: center;
 }
 .btn-jogar-novamente{
-
   height: 40px;
   width: 80%;
 }
+ .rodape{
+  height:auto;
 }
