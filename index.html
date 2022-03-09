@@ -11,15 +11,15 @@
   </head>
 <body>
     <button id="sair" class="sair" onclick="atualizar()">X</button>
-    <div class="titulo-jogo">
+    <section class="titulo-jogo">
       <h1>Jogo da Forca <br> HTML, CSS E JS</h1>
-      <hr id="linha" class="linha">
-      
-    </div>
+      <hr id="linha" class="linha">  
+    </section>
+
     <!-- Aqui eu defini o menu de navegação -->
     <nav id="menu">
       <ul class="menu">
-        <li><a href="other_pages/index.html">Inicio | </a></li>
+        <li><a href="index.html">Inicio | </a></li>
         <li><a href="other_pages/sobre.html"> Sobre | </a></li>
         <li><a href="other_pages/como_Funciona.html"> Como funciona? | </li></a>
         <li><a href="other_pages/contato.html"> Contato</a></li>
@@ -37,12 +37,13 @@
       <p style="color: white;">PRONTO PARA JOGAR?</p>
       <button id="iniciar-jogo" class="btn-jogar-novamente" onclick="exibir();">INICIAR JOGO</button>
     </div>
-<div id="mostrar-tabuleiro">
+    <div id="mostrar-tabuleiro">
     <div id="ocultar" class="centralizar">
       <canvas id="tela" width="400" height="300" ></canvas>
       <div class="centro">
         <p id="gameover" class="gameover">GAME OVER</p>
       </div>
+      <div id="logo-trofeu" class="area-trofeu"><img class="logo-trofeu" src="img/logo-trofeu.png"></div>
       <div id = "palavra"></div>
       <p id="dica" onclick="dica()" class="dica">** dica ** &nbsp;&nbsp;&nbsp;&nbsp;| Você possui: 6x tentativas |</p>
     </div>
@@ -51,9 +52,9 @@
       <p id="msg" class="msg-acerto-erro"></p>
       <p id="palavra-correta" class="msg-acerto-erro"></p>
     </div>
-    <div class="controle-jogador">
+    <section class="controle-jogador">
       <div class="teclado" id="letras"></div>
-    </div>
+    </section>
 </div>  
     <!-- Aqui eu defini meu rodapé-->
   <footer class="rodape">
